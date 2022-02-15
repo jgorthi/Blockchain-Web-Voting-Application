@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vote</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Style.css' %}">
+
+</head>
+<body>
+<div class="myclass">
+    <form action="#" method="post">
+        <img src="../static/logo.png">
+        <h3>Student Council Elections 2021</h3>
+        {% csrf_token %}
+        <p align="center">Vote to</p>
+        <p align="center">
+            <select name="CAD">
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="Adam">Adam</option>
+            <option value="Eve">Eve</option>
+            <option value="John">John</option>
+        </p>
+        <p align="center"><input type="submit" value="Submit" align="center"></p>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Style.css' %}">
+
+</head>
+<body>
+    <div class="myclass">
+        <form action="#" method="post">
+            <img src="../static/logo.png">
+            {% csrf_token %}
+            {{ form }}
+            <h3>Student Council Elections 2021</h3>
+            <p>Roll no:</p> <p><input type="text" name="Roll_no" ></p>
+            <p><input type="submit" value="Register"></p>
+        </form>
+    </div>
+</body>
+</html>

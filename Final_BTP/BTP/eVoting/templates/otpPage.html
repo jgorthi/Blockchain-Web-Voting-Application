@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vote</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Style.css' %}">
+
+</head>
+<body>
+<div class="myclass">
+    <form action="#" method="post">
+        <img src="../static/logo.png">
+        <h3>Student Council Elections 2021</h3>
+        {% csrf_token %}
+        <p align="center">Enter OTP :</p> <p align="center"><input type="text" name="OTP" ></p>
+        <p align="center"><input type="submit" value="Submit" align="center"></p>
+    </form>
+</div>
+</body>
+</html>
